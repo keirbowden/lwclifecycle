@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/accountSelect": [
+                "accountSelect/accountSelect.js"
+            ],
+            "c/infiniteScroll": [
+                "infiniteScroll/infiniteScroll.js"
+            ],
+            "c/lifecycleLogger": [
+                "lifecycleLogger/lifecycleLogger.js"
+            ],
+            "c/publisher": [
+                "publisher/publisher.js"
+            ],
+            "c/recordSelect": [
+                "recordSelect/recordSelect.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    },
+    "paths": {
+        "c/*": [
+            "*"
+        ]
+    }
+}

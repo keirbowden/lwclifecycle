@@ -1,0 +1,19 @@
+<template>
+        <div class="slds-scrollable_y accounts" style="height:10rem; border: 1px solid black;">
+            <div if:true={loading}>
+                <lightning-spinner
+                variant="brand"
+                size="large"
+                alternative-text="Loading more accounts">
+                </lightning-spinner>
+            </div>
+            <template for:each={accounts} for:item="account">
+                <lightning-card key={account.Id} title={account.Name}>
+                    <ul>
+                        <li>Employees : {account.NumberOfEmployees}</li>
+                        <li>Industry : {account.Industry}</li>
+                    </ul>
+                </lightning-card>
+            </template>
+        </div>
+</template>
